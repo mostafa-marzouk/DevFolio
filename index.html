@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevFoilo</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navId">
     <!-- start nav -->
     <nav class="navbar navbar-expand-lg backg-nv fixed-top p-2">
       <div class="container">
@@ -84,7 +84,7 @@
               </ul>
             </li>
             <li class="nav-item ms-3">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#content"
                 >CONTENT</a
               >
             </li>
@@ -630,7 +630,7 @@
       </section>
       <!-- end sec break -->
       <!-- start sec 5 -->
-      <section id="blog" class="bg-light">
+      <section id="blog">
         <div class="container">
           <div class="content-con text-center pt-5">
             <h1 class="fw-bold fs-50">BLOG</h1>
@@ -774,37 +774,40 @@
       </section>
       <!-- end sec 5 -->
       <!-- start sec 6 -->
-      <section id="content" class="min-vh-100">
-        <div class="container bg-info">
+      <section id="content" class="min-vh-100 bg-success d-flex flex-column">
+        <div class="container bg-light my-md-auto p-5 mt-sm-3 ">
           <div class="row">
             <div class="col-md-6">
-              <div class="bg-danger">
+              <div class=" d-flex flex-column ">
                 <div class="label-text position-relative mb-5">
                   <h1 class="fs-2">Send Message Us</h1>
                 </div>
                 <form class="d-flex gap-3 flex-column" action="">
-                  <input class="p-2" type="text" placeholder="Your Name" />
-                  <input class="p-2" type="email" placeholder="Your Email" />
-                  <input class="p-2" type="text" placeholder="Subject" />
+                  <input class="p-2 form-control rounded-0" type="text" placeholder="Your Name" />
+                  <input class="p-2 form-control rounded-0" type="email" placeholder="Your Email" />
+                  <input class="p-2 form-control rounded-0" type="text" placeholder="Subject" />
                   <textarea
                     style="height: 130px"
-                    class="p-2"
+                    class="p-2 form-control rounded-0"
                     placeholder="Message"
                     name="text"
                     id=""
                   ></textarea>
-                  <button
+                  <div class=" d-flex justify-content-center align-items-center border-6 border-black rounded-pill align-self-center" style="width: 180px; height: 65px">
+
+                    <button
                     type="submit"
-                    style="width: 170px; height: 48px"
-                    class="bg-main text-white my-3 border border-2 rounded-pill"
-                  >
-                    Send Message
-                  </button>
+                    style="width: 170px; height: 55px;"
+                    class="bg-main border-0 fs-5 text-white rounded-pill"
+                  >Send Message</button>
+
+                  </div>
+
                 </form>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="bg-danger">
+              <div class="part-2">
                 <div class="label-text position-relative mb-5">
                   <h1 class="fs-2">Get in Touch</h1>
                 </div>
@@ -815,30 +818,34 @@
                   laboriosam ratione nobis mollitia inventore?
                 </p>
                 <ul class="list-unstyled">
-                  <li class="d-flex gap-2 align-items-center">
+                  <li class="d-flex gap-2 align-items-center my-2">
                     <i class="color-main fa-fw fa-solid fa-location-dot"></i>
                     <p class="m-0">329 WASHINGTON ST BOSTON, MA 02108</p>
                   </li>
-                  <li class="d-flex gap-2 align-items-center">
+                  <li class="d-flex gap-2 align-items-center my-2">
                     <i
                       class="color-main fa-fw fa-solid fa-mobile-screen-button"
                     ></i>
                     <p class="m-0">(617) 557-0089</p>
                   </li>
-                  <li class="d-flex gap-2 align-items-center">
+                  <li class="d-flex gap-2 align-items-center my-2">
                     <i class="color-main fa-fw fa-regular fa-envelope"></i>
                     <p class="m-0">contact@example.com</p>
                   </li>
                 </ul>
-                <ul class="list-unstyled d-flex gap-3">
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-linkedin"></i></li>
+                <ul class=" list-unstyled d-flex gap-3">
+                  <li class=" list-part bg-main d-flex justify-content-center align-items-center fs-4 rounded-circle" style="width: 50px; height: 50px;" ><i class=" icon-touch d-flex justify-content-center align-items-center fa-brands fa-facebook"></i></li>
+                  <li class=" list-part bg-main d-flex justify-content-center align-items-center fs-4 rounded-circle" style="width: 50px; height: 50px;" ><i class=" icon-touch d-flex justify-content-center align-items-center fa-brands fa-instagram"></i></li>
+                  <li class=" list-part bg-main d-flex justify-content-center align-items-center fs-4 rounded-circle" style="width: 50px; height: 50px;" ><i class=" icon-touch d-flex justify-content-center align-items-center fa-brands fa-twitter"></i></li>
+                  <li class=" list-part bg-main d-flex justify-content-center align-items-center fs-4 rounded-circle" style="width: 50px; height: 50px;" ><i class=" icon-touch d-flex justify-content-center align-items-center fa-brands fa-linkedin"></i></li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+        <div class="Copyright align-self-center text-center bg-main w-100 pt-3 text-white">
+          <p class="m-0">© Copyright <strong>DevFolio.</strong>  All Rights Reserved</p>
+          <p>Designed by Mostafa MarzouQ</p>
         </div>
       </section>
       <!-- end sec 6 -->
